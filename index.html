@@ -1,12 +1,450 @@
+<!-- ! -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- metayı değiştirdik Starter templateDen bir üsttekini copy paste yaptık -->
+    <!-- aşağıdaki eklemeleri yaptık  -->
+<!-- Link:css --> <!-- href kısmını düzenleyerek css klasörü içinden bootstrap.min.css seçtik-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- link:css dedikten sonra fontawesome/css/all.min.css klasörünü düzenledik. -->
+<link rel="stylesheet" href="fontawesome/css/all.min.css">
+<link rel="stylesheet" href="css/medium.css">
+
+<!-- googlefonts dan aşagıdaki fontları ekledik -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+<title>Medium</title>
+
 </head>
+
 <body>
-    
+
+    <div class="border-bottom-dark bg-yellow fixed-top"> <!--navbarı yukarıya fixledik-->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <strong>Medium</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto"> <!--ml-auto navbar sağa-->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Our Story</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Write</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign In</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link btn btn-dark text-light ml-4" href="#">Get Started</a> <!--btn btn-dark text-light ekledik-->
+                      </li>
+                    </ul>
+                </div>
+              </nav>
+        </div>
+    </div>
+
+    <div class="bg-yellow py-5 border-bottom-dark py-1 mt-5"> <!--navbar sabitlenince bu kısıma mt-5 verdik-->
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <!-- h1 yetmedi getbootstrap Typography den display-1 classını seçtim -->
+                    <h1 class="display-4 lead">Medium is a place <br> to write, read, and <br> connect</h1>
+                    <p class="lead">It's easy and free to post your thinking on any topic and connect with millions of readers.
+                    <a href="#" class="text-dark"> <u>Learn more.</u> </a> </p> <br><br>
+                    <!-- a.btn -->
+                    <a href="#" class="btn btn-outline-dark">Get Started</a>
+                </div>
+                <div class="col-6">
+                    <img src="https://picsum.photos/300/300" alt="" class="rounded-circle float-right">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 mb-3">
+                 <h6><i class="fas fa-rocket"></i> <small class="ml-2">TRENDING ON MEDIUM</small></h6>
+            </div>
+
+            <!-- article.col-sm-4*6>lorem1 -->
+            <article class="col-sm-4 mb-2">
+                <div class="row">
+                    <!-- .col-1+.col-11 -->
+                    <div class="col-1 text-black-50"> <!--text-muted veya text-black-50 clası rengi grileştirir-->
+                        <h6><strong>01</strong></h6>
+                    </div>
+                    <div class="col-11">
+                        <img class="rounded-circle" src="https://picsum.photos/id/11/25/25" alt="">
+                        <span class="small ml-1">Sienna Mae Gomez</span>
+                        <h6 class="mt-2"><strong>Sienna Mae Gomez: Reflections from an 18-Year Old Me</strong></h6>
+                        <!-- getbootstepran inline list copy -->
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Jan 23</li>
+                            <li class="list-inline-item">15 min read</li>
+                            <li class="list-inline-item">
+                                <i class="far fa-star"></i>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </article>
+            
+            <article class="col-sm-4 mb-2">
+                <div class="row">
+                    <!-- .col-1+.col-11 -->
+                    <div class="col-1 text-black-50"> <!--text-muted veya text-black-50 clası rengi grileştirir-->
+                        <h6><strong>02</strong></h6>
+                    </div>
+                    <div class="col-11">
+                        <img class="rounded-circle" src="https://picsum.photos/id/12/25/25" alt="">
+                        <span class="small ml-1">Matt Charnock</span>
+                        <span class="small text-black-50">in</span>
+                        <span class="small">The Bold Italic</span>
+                        <h6 class="mt-2"><strong>Here’s the Story Behind That Viral Shot of San Francisco</strong></h6>
+                        <!-- getbootstepran inline list copy -->
+                        <ul class="list-inline small">
+                            <li class="list-inline-item"></li>Feb 12</li>
+                            <li class="list-inline-item">3 min read</li>
+                            <li class="list-inline-item">
+                                <i class="far fa-star"></i>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-sm-4 mb-2">
+                <div class="row">
+                    <!-- .col-1+.col-11 -->
+                    <div class="col-1 text-black-50"> <!--text-muted veya text-black-50 clası rengi grileştirir-->
+                        <h6><strong>03</strong></h6>
+                    </div>
+                    <div class="col-11">
+                        <img class="rounded-circle" src="https://picsum.photos/id/13/25/25" alt="">
+                        <span class="small ml-1">Medium Staff</span>
+                            <span class="small text-black-50">in</span>
+                            <span class="small">3 min read</span>
+                            
+                        <h6 class="mt-2"><strong>A Better Medium.com</strong></h6>
+                        <!-- getbootstepran inline list copy -->
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Feb 8</li>
+                            <li class="list-inline-item">3 min read</li>
+                            <li class="list-inline-item">
+                                <i class="far fa-star"></i>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-sm-4 mb-2">
+                <div class="row">
+                    <!-- .col-1+.col-11 -->
+                    <div class="col-1 text-black-50"> <!--text-muted veya text-black-50 clası rengi grileştirir-->
+                        <h6><strong>04</strong></h6>
+                    </div>
+                    <div class="col-11">
+                        <img class="rounded-circle" src="https://picsum.photos/id/14/25/25" alt="">
+                        <span class="small ml-1">Sienna Mae Gomez</span>
+                        <h6 class="mt-2"><strong>Sienna Mae Gomez: Reflections from an 18-Year Old Me</strong></h6>
+                        <!-- getbootstepran inline list copy -->
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Jan 23</li>
+                            <li class="list-inline-item">15 min read</li>
+                            <li class="list-inline-item">
+                                <i class="far fa-star"></i>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-sm-4 mb-2">
+                <div class="row">
+                    <!-- .col-1+.col-11 -->
+                    <div class="col-1 text-black-50"> <!--text-muted veya text-black-50 clası rengi grileştirir-->
+                        <h6><strong>05</strong></h6>
+                    </div>
+                    <div class="col-11">
+                        <img class="rounded-circle" src="https://picsum.photos/id/15/25/25" alt="">
+                        <span class="small ml-1">Sienna Mae Gomez</span>
+                        <h6 class="mt-2"><strong>Sienna Mae Gomez: Reflections from an 18-Year Old Me</strong></h6>
+                        <!-- getbootstepran inline list copy -->
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Jan 23</li>
+                            <li class="list-inline-item">15 min read</li>
+                            <li class="list-inline-item">
+                                <i class="far fa-star"></i>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-sm-4 mb-2">
+                <div class="row">
+                    <!-- .col-1+.col-11 -->
+                    <div class="col-1 text-black-50"> <!--text-muted veya text-black-50 clası rengi grileştirir-->
+                        <h6><strong>06</strong></h6>
+                    </div>
+                    <div class="col-11">
+                        <img class="rounded-circle" src="https://picsum.photos/id/16/25/25" alt="">
+                        <span class="small ml-1">Sienna Mae Gomez</span>
+                        <h6 class="mt-2"><strong>Sienna Mae Gomez: Reflections from an 18-Year Old Me</strong></h6>
+                        <!-- getbootstepran inline list copy -->
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Jan 23</li>
+                            <li class="list-inline-item">15 min read</li>
+                            <li class="list-inline-item">
+                                <i class="far fa-star"></i>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </article>
+            
+        </div>
+    </div> <!--container end-->
+
+        <!-- <hr> buraya hr yapmak yerine aşağıdaki class içerisine border-top verdik -->
+
+ <div class="border-top-dark">
+     <div class="container">
+        <div class="row"> <!-- border-top border-dark classlarını sildim yeni div oluşturduk ve border-top-dark clasını css de tanımladık-->
+            <section class="col-sm-8">
+
+                <!-- article.row>.col-8+.col-4 -->
+                <article class="row mb-3 mt-5">
+                    <div class="col-8">
+                        <img class="rounded-circle" src="https://picsum.photos/id/11/25/25" alt="">
+                        <span class="small ml-1">Sienna Mae Gomez</span>
+                        <h6 class="mt-2"><strong>Sienna Mae Gomez: Reflections from an 18-Year Old Me</strong></h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit qui officia praesentium. Eaque, deleniti perspiciatis.</p>
+                        <!-- getbootstepran inline list copy -->
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Jan 23</li>
+                            <li class="list-inline-item">15 min read</li>
+                            <li class="list-inline-item">
+                                <i class="far fa-star"></i>
+                    </div>
+                    <div class="col-4">
+                        <!-- img.w-100 -->
+                        <img src="https://picsum.photos/id/16/400/250" alt="" class="w-100">
+                    </div>
+                </article>
+                
+                <!-- article.row>.col-8+.col-4 -->
+                <article class="row mb-3">
+                    <div class="col-8">
+                        <img class="rounded-circle" src="https://picsum.photos/id/11/25/25" alt="">
+                        <span class="small ml-1">Sienna Mae Gomez</span>
+                        <h6 class="mt-2"><strong>Sienna Mae Gomez: Reflections from an 18-Year Old Me</strong></h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit qui officia praesentium. Eaque, deleniti perspiciatis.</p>
+                        <!-- getbootstepran inline list copy -->
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Jan 23</li>
+                            <li class="list-inline-item">15 min read</li>
+                            <li class="list-inline-item">
+                                <i class="far fa-star"></i>
+                    </div>
+                    <div class="col-4">
+                        <!-- img.w-100 -->
+                        <img src="https://picsum.photos/id/16/400/250" alt="" class="w-100">
+                    </div>
+                </article>
+
+
+                <!-- article.row>.col-8+.col-4 -->
+                <article class="row mb-3">
+                    <div class="col-8">
+                        <img class="rounded-circle" src="https://picsum.photos/id/11/25/25" alt="">
+                        <span class="small ml-1">Sienna Mae Gomez</span>
+                        <h6 class="mt-2"><strong>Sienna Mae Gomez: Reflections from an 18-Year Old Me</strong></h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit qui officia praesentium. Eaque, deleniti perspiciatis.</p>
+                        <!-- getbootstepran inline list copy -->
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Jan 23</li>
+                            <li class="list-inline-item">15 min read</li>
+                            <li class="list-inline-item">
+                                <i class="far fa-star"></i>
+                    </div>
+                    <div class="col-4">
+                        <!-- img.w-100 -->
+                        <img src="https://picsum.photos/id/54/400/250" alt="" class="w-100">
+                    </div>
+                </article>
+
+
+                <!-- article.row>.col-8+.col-4 -->
+                <article class="row mb-3">
+                    <div class="col-8">
+                        <img class="rounded-circle" src="https://picsum.photos/id/11/25/25" alt="">
+                        <span class="small ml-1">Sienna Mae Gomez</span>
+                        <h6 class="mt-2"><strong>Sienna Mae Gomez: Reflections from an 18-Year Old Me</strong></h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit qui officia praesentium. Eaque, deleniti perspiciatis.</p>
+                        <!-- getbootstepran inline list copy -->
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Jan 23</li>
+                            <li class="list-inline-item">15 min read</li>
+                            <li class="list-inline-item">
+                                <i class="far fa-star"></i>
+                    </div>
+                    <div class="col-4">
+                        <!-- img.w-100 -->
+                        <img src="https://picsum.photos/id/55/400/250" alt="" class="w-100">
+                    </div>
+                </article>
+
+
+                <!-- article.row>.col-8+.col-4 -->
+                <article class="row mb-3">
+                    <div class="col-8">
+                        <img class="rounded-circle" src="https://picsum.photos/id/11/25/25" alt="">
+                        <span class="small ml-1">Sienna Mae Gomez</span>
+                        <h6 class="mt-2"><strong>Sienna Mae Gomez: Reflections from an 18-Year Old Me</strong></h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit qui officia praesentium. Eaque, deleniti perspiciatis.</p>
+                        <!-- getbootstepran inline list copy -->
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Jan 23</li>
+                            <li class="list-inline-item">15 min read</li>
+                            <li class="list-inline-item">
+                                <i class="far fa-star"></i>
+                    </div>
+                    <div class="col-4">
+                        <!-- img.w-100 -->
+                        <img src="https://picsum.photos/id/56/400/250" alt="" class="w-100">
+                    </div>
+                </article>
+
+
+                <!-- article.row>.col-8+.col-4 -->
+                <article class="row mb-3">
+                    <div class="col-8">
+                        <img class="rounded-circle" src="https://picsum.photos/id/11/25/25" alt="">
+                        <span class="small ml-1">Sienna Mae Gomez</span>
+                        <h6 class="mt-2"><strong>Sienna Mae Gomez: Reflections from an 18-Year Old Me</strong></h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit qui officia praesentium. Eaque, deleniti perspiciatis.</p>
+                        <!-- getbootstepran inline list copy -->
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Jan 23</li>
+                            <li class="list-inline-item">15 min read</li>
+                            <li class="list-inline-item">
+                                <i class="far fa-star"></i>
+                    </div>
+                    <div class="col-4">
+                        <!-- img.w-100 -->
+                        <img src="https://picsum.photos/id/57/400/250" alt="" class="w-100">
+                    </div>
+                </article>
+
+
+                <!-- article.row>.col-8+.col-4 -->
+                <article class="row">
+                    <div class="col-8">
+                        <img class="rounded-circle" src="https://picsum.photos/id/11/25/25" alt="">
+                        <span class="small ml-1">Sienna Mae Gomez</span>
+                        <h6 class="mt-2"><strong>Sienna Mae Gomez: Reflections from an 18-Year Old Me</strong></h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit qui officia praesentium. Eaque, deleniti perspiciatis.</p>
+                        <!-- getbootstepran inline list copy -->
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Jan 23</li>
+                            <li class="list-inline-item">15 min read</li>
+                            <li class="list-inline-item">
+                                <i class="far fa-star"></i>
+                    </div>
+                    <div class="col-4">
+                        <!-- img.w-100 -->
+                        <img src="https://picsum.photos/id/58/400/250" alt="" class="w-100">
+                    </div>
+                </article>
+
+                
+
+            </section>
+            <aside class="col-sm-4 mt-5">
+                <h6>
+                    <small><strong>DISCOVER MORE OF WHAT MATTERS TO YOU</strong></small>
+                </h6>
+                <!-- getbootstepran inline list copy -->
+                <ul class="list-inline aside-buttons">
+                    <li class="list-inline-item">
+                        <!-- a.btn.btn-outline-secondary>lorem1 -->
+                        <a href="" class="btn btn-sm btn-outline-secondary">Self</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <!-- a.btn.btn-outline-secondary>lorem1 -->
+                        <a href="" class="btn btn-sm btn-outline-secondary">Relationships</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <!-- a.btn.btn-outline-secondary>lorem1 -->
+                        <a href="" class="btn btn-sm btn-outline-secondary">Data Science</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <!-- a.btn.btn-outline-secondary>lorem1 -->
+                        <a href="" class="btn btn-sm btn-outline-secondary">Programming</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <!-- a.btn.btn-outline-secondary>lorem1 -->
+                        <a href="" class="btn btn-sm btn-outline-secondary">Productivity</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <!-- a.btn.btn-outline-secondary>lorem1 -->
+                        <a href="" class="btn btn-sm btn-outline-secondary">Javascript</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <!-- a.btn.btn-outline-secondary>lorem1 -->
+                        <a href="" class="btn btn-sm btn-outline-secondary">Machine Learning</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <!-- a.btn.btn-outline-secondary>lorem1 -->
+                        <a href="" class="btn btn-sm btn-outline-secondary">Politics</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <!-- a.btn.btn-outline-secondary>lorem1 -->
+                        <a href="" class="btn btn-sm btn-outline-secondary">Health</a>
+                    </li>
+                </ul> 
+                <hr>
+                
+                <a class="mr-3 text-dark" href="#">Status  </a>
+                <a class="mr-3 text-dark" href="#">Writers  </a>
+                <a class="mr-3 text-dark" href="#">Blog  </a>
+                <a class="mr-3 text-dark" href="#">Careers  </a>
+                <a class="mr-3 text-dark" href="#">Privacy  </a>
+                <a class="mr-3 text-dark" href="#">Terms  </a>
+                <a class="mr-3 text-dark" href="#">About  </a>
+                <a class="mr-3 text-dark" href="#">Knowable  </a>
+                <a class="mr-3 text-dark" href="#">Help  </a>
+            </aside>
+
+        </div>
+     </div>
+ </div>
+        
+
+
+<br><br><br><br><br>
+
+    <!-- script:src dedikten sonra kaynak kısmını jquery ve bootstrap.bundle.min.js şeklinde düzenledik -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
